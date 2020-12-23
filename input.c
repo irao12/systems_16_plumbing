@@ -16,7 +16,7 @@ int main(){
     write(fd, &buffer, sizeof(buffer));
     close (fd);
     int fd1 = open("pipe", O_RDONLY);
-    read(fd, &total, sizeof(total));
+    read(fd1, &total, sizeof(total));
     printf("Total: %d\n", total);
   }
 
